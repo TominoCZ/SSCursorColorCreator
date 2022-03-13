@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLoad));
             this.rtbInput = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
@@ -42,9 +43,9 @@
             this.rtbInput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.rtbInput.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.rtbInput.ForeColor = System.Drawing.SystemColors.Info;
-            this.rtbInput.Location = new System.Drawing.Point(12, 41);
+            this.rtbInput.Location = new System.Drawing.Point(12, 36);
             this.rtbInput.Name = "rtbInput";
-            this.rtbInput.Size = new System.Drawing.Size(430, 168);
+            this.rtbInput.Size = new System.Drawing.Size(430, 173);
             this.rtbInput.TabIndex = 0;
             this.rtbInput.Text = "";
             this.rtbInput.TextChanged += new System.EventHandler(this.rtbInput_TextChanged);
@@ -86,6 +87,7 @@
             this.Controls.Add(this.rtbInput);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(470, 300);

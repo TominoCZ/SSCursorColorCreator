@@ -51,20 +51,7 @@ namespace SSCCC
             if (_bypass || colors == null)
                 return;
 
-            _bypass = true;
-
-            var ssName = tbName.SelectionStart;
-            var ssCreator = tbName.SelectionStart;
-
-            tbName.Text = tbName.Text.Trim();
-            tbCreator.Text = tbCreator.Text.Trim();
-
-            tbName.SelectionStart = Math.Min(ssName, tbName.Text.Length);
-            tbCreator.SelectionStart = Math.Min(ssCreator, tbCreator.Text.Length);
-
-            _bypass = false;
-
-            rtbOutput.Text = $"{tbName.Text}; {tbCreator.Text}; { string.Join("|", colors.Select(c => $"{c.R},{c.G},{c.B}")) }; {cbRarity.SelectedIndex}; {(long)nudPrice.Value}";
+            rtbOutput.Text = $"{tbName.Text.Trim()}; {tbCreator.Text.Trim()}; { string.Join("|", colors.Select(c => $"{c.R},{c.G},{c.B}")) }; {cbRarity.SelectedIndex}; {(long)nudPrice.Value}";
 
             _settings.Input = rtbInput.Text;
 
