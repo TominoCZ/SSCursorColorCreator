@@ -131,7 +131,7 @@
             this.nudPrice.Name = "nudPrice";
             this.nudPrice.Size = new System.Drawing.Size(106, 26);
             this.nudPrice.TabIndex = 6;
-            this.nudPrice.ValueChanged += new System.EventHandler(this.nudPrice_ValueChanged);
+            this.nudPrice.ValueChanged += new System.EventHandler(this.ValueChanged);
             // 
             // label4
             // 
@@ -173,7 +173,7 @@
             this.cbRarity.Name = "cbRarity";
             this.cbRarity.Size = new System.Drawing.Size(106, 27);
             this.cbRarity.TabIndex = 10;
-            this.cbRarity.SelectedIndexChanged += new System.EventHandler(this.cbRarity_SelectedIndexChanged);
+            this.cbRarity.SelectedIndexChanged += new System.EventHandler(this.ValueChanged);
             // 
             // tbName
             // 
@@ -184,7 +184,7 @@
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(336, 26);
             this.tbName.TabIndex = 11;
-            this.tbName.TextChanged += new System.EventHandler(this.tbName_TextChanged);
+            this.tbName.TextChanged += new System.EventHandler(this.ValueChanged);
             // 
             // label6
             // 
@@ -207,7 +207,7 @@
             this.tbCreator.Name = "tbCreator";
             this.tbCreator.Size = new System.Drawing.Size(337, 26);
             this.tbCreator.TabIndex = 13;
-            this.tbCreator.TextChanged += new System.EventHandler(this.tbCreator_TextChanged);
+            this.tbCreator.TextChanged += new System.EventHandler(this.ValueChanged);
             // 
             // label7
             // 

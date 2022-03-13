@@ -125,12 +125,6 @@ namespace SSCCC
             UpdateOutput();
         }
 
-        private void tbName_TextChanged(object sender, EventArgs e) => UpdateOutput();
-
-        private void tbCreator_TextChanged(object sender, EventArgs e) => UpdateOutput();
-
-        private void nudPrice_ValueChanged(object sender, EventArgs e) => UpdateOutput();
-
-        private void cbRarity_SelectedIndexChanged(object sender, EventArgs e) => UpdateOutput();
+        private void ValueChanged(object sender, EventArgs e) => UpdateOutput();
     }
 }
